@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Doom</title>
+<title>DOOM</title>
 
 <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
 
@@ -16,7 +16,7 @@ html, body {
     overflow:hidden;
 }
 
-#dos {
+dos-player {
     width:100vw;
     height:100vh;
 }
@@ -29,15 +29,10 @@ canvas {
 
 <body>
 
-<div id="dos"></div>
-
-<script>
-emulators.dos(document.getElementById("dos"), {
-    kiosk: true
-}).then((ci) => {
-    ci.run("https://v8.js-dos.com/bundles/doom.jsdos");
-});
-</script>
+<dos-player
+    src="https://v8.js-dos.com/bundles/doom.jsdos"
+    kiosk
+></dos-player>
 
 </body>
 </html>
