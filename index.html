@@ -2,33 +2,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Play DOOM</title>
+<title>DOOM</title>
 
-<script src="https://js-dos.com/v7/build/js-dos.js"></script>
+<link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
+<script src="https://v8.js-dos.com/latest/js-dos.js"></script>
 
 <style>
 body{
-background:black;
-margin:0;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
+  margin:0;
+  background:black;
 }
 
 #dos{
-width:960px;
-height:600px;
+  width:100vw;
+  height:100vh;
 }
 </style>
-
 </head>
 
 <body>
 
 <div id="dos"></div>
 
-<script src="doom.js"></script>
+<script>
+Dos(document.getElementById("dos"), {
+  url: "https://v8.js-dos.com/bundles/doom.jsdos"
+});
+</script>
 
 </body>
 </html>
